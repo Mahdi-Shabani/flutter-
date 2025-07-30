@@ -1,4 +1,7 @@
-# flutter_application_2
+# APP - NFT
+## Preview
+
+<img src="screenshots/cover_test.png" width="400"/>
 
 A new Flutter project.
 
