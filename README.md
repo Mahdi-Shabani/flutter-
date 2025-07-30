@@ -31,6 +31,48 @@ and a clean, mobile-friendly navigation.
 
 ## Getting Started
 
-1. Clone this repository:
-```bash
-git clone https://github.com/YourUsername/YourRepo.git
+1. **Clone this repository:**
+    ```bash
+    git clone https://github.com/YourUsername/YourRepo.git
+    ```
+
+2. **Enter the project directory and install dependencies:**
+    ```bash
+    cd YourRepo
+    flutter pub get
+    ```
+
+3. **Run the project:**
+    ```bash
+    flutter run
+    ```
+
+---
+
+## Screenshots
+
+<img src="screenshots/cover_test.png" width="700"/>
+
+---
+
+## Hexagon Button (Sin & Cos Formula)
+
+The floating action button in this UI is a perfect hexagon,  
+drawn using the following Dart code with sine and cosine:
+
+```dart
+for (int i = 0; i < 6; i++) {
+  final angle = (i * 60) * (pi / 180);
+  final x = centerX + radius * cos(angle);
+  final y = centerY + radius * sin(angle);
+  if (i == 0) {
+    path.moveTo(x, y);
+  } else {
+    path.lineTo(x, y);
+  }
+}
+path.close();
+```
+## Developer
+Mahdi Shabani
+
